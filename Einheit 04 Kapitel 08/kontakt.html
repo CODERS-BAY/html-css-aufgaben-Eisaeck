@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <main>
     <header>
 
         <h1>Willkommen im Tierpark Ferdi-Fuchs!</h1>
@@ -28,33 +29,40 @@
 
         <form action="absenden.html" method="get">
             <fieldset>
+            
                 <legend>Persönliche Daten</legend>
                 <div class="custom">
                     <label for="fname">Vorname</label>
                     <input type="text" name="fname" id="fname">
                 </div>
+            
+            
                 <div class="custom">
                     <label for="lname">Nachname</label>
                     <input type="text" name="lname" id="lname">
                 </div>
+            
+            
                 <div class="custom">
                     <label for="mail">E-Mail</label>
                     <input type="email" name="mail" id="mail" placeholder="info@tierpark.at">
                 </div>
-                <hr>
+            
                 <div class="custom">
                     <label for="besuchstag">Besuchstag</label>
                     <input type="date" name="besuchstag" id="besuchstag">
                 </div>
+            
                 <div class="custom">
                     <label for="besuchszeit">Besuchszeit</label>
                     <input type="time" name="besuchszeit" id="besuchszeit">
                 </div>
-                <hr>
+            
                 <div class="custom">
                     <label for="zufriedenheit">Hat es Ihnen gefallen?</label>
                     <input type="range" name="zufriedenheit" id="zufriedenheit">
                 </div>
+            
                 <div class="custom">
                     <label for="empfehlung">Würden Sie uns weiterempfehlen</label>
                     <div>
@@ -62,7 +70,7 @@
                         <input type="radio" name="empfehlung"> Nein
                     </div>
                 </div>
-                <hr>
+            
                 <div class="custom">
                     <label for="tierart">Welche Tierart hat Ihnen am besten gefallen?</label>
                     <input type="text" list="tier" name="tierart" id="tierart">
@@ -77,12 +85,12 @@
                         <option value="Fasanbutt">
                     </datalist>
                 </div>
-                <hr>
+            
                 <div class="custom">
                     <label for="comment">Kommentar</label>
                     <textarea name="commentMe" id="comment" cols="20" rows="8"></textarea>
                 </div>
-                <hr>
+            
                 <div class="custom">
                     <label for="visit">Besucherinfo</label>
                     <select name="visit" id="visit">
@@ -93,11 +101,18 @@
                         <option value="5">Etwas anderes</option>
                     </select>
                 </div>
-                <hr>
+            
                 <div class="formbutton">
                     <button type="reset">Zurücksetzen</button>
                     <button type="submit">Absenden</button>
                 </div>
             </fieldset>
+
         </form>
+    </main>
     </body>
+    <footer>
+        C 2021 - Manuel
+    </footer>
+
+</html>
